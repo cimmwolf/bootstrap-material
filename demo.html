@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Material theme demonstration</title>
+
+    <link href="css/bootstrap-material.css" rel="stylesheet" type="text/css">
+</head>
+<body class="main-background">
+
+<div id="alerts" class="container-fluid">
+    <h1>Alerts</h1>
+
+    <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-info" role="alert">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+</div>
+<div id="buttons" class="container-fluid">
+    <h1>Buttons</h1>
+
+    <h2>Flat</h2>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <h2>Raised</h2>
+    <button type="button" class="btn btn-default btn-raised">Default</button>
+    <button type="button" class="btn btn-primary btn-raised">Primary</button>
+    <button type="button" class="btn btn-success btn-raised">Success</button>
+    <button type="button" class="btn btn-info btn-raised">Info</button>
+    <button type="button" class="btn btn-warning btn-raised">Warning</button>
+    <button type="button" class="btn btn-danger btn-raised">Danger</button>
+    <button type="button" class="btn btn-link btn-raised">Link</button>
+    <h2>Disabled</h2>
+    <button type="button" class="btn btn-default disabled">Default</button>
+    <button type="button" class="btn btn-primary disabled">Primary</button>
+    <button type="button" class="btn btn-success disabled">Success</button>
+    <button type="button" class="btn btn-info disabled">Info</button>
+    <button type="button" class="btn btn-warning disabled">Warning</button>
+    <button type="button" class="btn btn-danger disabled">Danger</button>
+    <button type="button" class="btn btn-link disabled">Link</button>
+</div>
+<div id="inputFields" class="container-fluid">
+    <h1>Input fields</h1>
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="col-xs-5 col-sm-3">Normal with hint text</div>
+            <div class="col-xs-7 col-sm-9"><input class="form-control" type="text" placeholder="Hint text"/></div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-5 col-sm-3">Normal with input text</div>
+            <div class="col-xs-7 col-sm-9"><input class="form-control" type="text" placeholder="Hint text"
+                                                  value="Input text"/></div>
+        </div>
+        <div class="form-group has-error">
+            <div class="col-xs-5 col-sm-3">Error</div>
+            <div class="col-xs-7 col-sm-9"><input class="form-control" type="text" placeholder="Hint text"
+                                                  value="Input text"/></div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-5 col-sm-3">Disabled</div>
+            <div class="col-xs-7 col-sm-9"><input class="form-control" type="text" placeholder="Hint text"
+                                                  value="Input text" disabled/></div>
+        </div>
+    </div>
+
+</div>
+<div id="navbar">
+    <h1>Navbar</h1>
+    <nav class="navbar navbar-default z-position-1">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

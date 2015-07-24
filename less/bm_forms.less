@@ -1,0 +1,23 @@
+.form-control {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  &:focus {
+    position: relative;
+    top: 1px;
+    box-shadow: none !important;
+    border-width: 2px;
+  }
+  .has-error & {
+    border-color: @state-danger-bg !important;
+  }
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: @cursor-disabled;
+    background-color: transparent;
+    color: @text-white-muted;
+    border-bottom: 2px dotted;
+  }
+}

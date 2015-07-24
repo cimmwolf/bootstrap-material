@@ -1,0 +1,106 @@
+.btn {
+  text-transform: uppercase;
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      outline: none;
+    }
+  }
+  &.active, &:active {
+    box-shadow: none
+  }
+}
+
+//== Mixins
+.button-variant(@color; @background; @border) {
+  color: @background;
+  background-color: transparent;
+  border-color: transparent;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    color: @text-color;
+    background-color: @background;
+    border-color: transparent;
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    background: darken(@background, 10%) none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      color: @text-muted;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  &.btn-raised {
+    color: @text-black;
+    background-color: @background;
+    .z-position-1();
+
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+      color: @text-black;
+      background-color: @background;
+    }
+
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+
+      .z-position-2();
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @background;
+  }
+}
+
+.button-variant(@color; @background; @border) when (@background = @btn-default-bg) {
+  color: @color;
+  background-color: transparent;
+  border-color: transparent;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    color: @color;
+    background-color: fade(darken(#fff, 20%), 15%);
+    border-color: transparent;
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    background: fade(darken(@color, 20%), 25%) none;
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}

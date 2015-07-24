@@ -1,0 +1,15 @@
+{
+  "name": "cimmwolf/bootstrap-material",
+  "description": "Twitter bootstrap theme in style of Google material design",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Denis Beliaev",
+      "email": "cimmwolf@gmail.com"
+    }
+  ],
+  "require": {
+    "twbs/bootstrap": "^3.3.5"
+  }
+}
